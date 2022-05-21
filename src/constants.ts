@@ -10,8 +10,8 @@ export enum ChainId {
   GÖRLI = 5,
   KOVAN = 42,
   BSC = 56,
-  ETM3 = 36,
-  ETM3Test = 37
+  ETMP = 36,
+  ETMPTest = 37
 }
 
 export enum TradeType {
