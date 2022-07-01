@@ -25,9 +25,29 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0x4E0042cf6642a1A23d16944581ac9097b3e40a7D'
+export const getFactoryAddress = (chainId: number) => {
+  switch (chainId){
+    case ChainId.ETMPTest:
+      return {
+        address: '0x4bFb5B69833b6FB801A13C510C7cfca50bd584e1',
+        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+      }
+    case ChainId.ETMP:
+      return {
+        address: '0x890883022737CF17636fbE2f6B093Fff6c82135f',
+        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+      }
+    default:
+      return {
+        address: '0x890883022737CF17636fbE2f6B093Fff6c82135f',
+        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+      }
+  }
+}
 
-export const INIT_CODE_HASH = '0xb246eb934a1ac5ead44e465bee3877074c8672f76e3a9a07e7b9a6725b075bf1'
+export const FACTORY_ADDRESS = '0x890883022737CF17636fbE2f6B093Fff6c82135f'
+
+export const INIT_CODE_HASH = '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
