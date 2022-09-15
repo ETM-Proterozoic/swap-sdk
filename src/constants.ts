@@ -11,36 +11,36 @@ export enum ChainId {
   KOVAN = 42,
   BSC = 56,
   ETMP = 36,
-  ETMPTest = 37
+  ETMPTest = 37,
 }
 
 export enum TradeType {
   EXACT_INPUT,
-  EXACT_OUTPUT
+  EXACT_OUTPUT,
 }
 
 export enum Rounding {
   ROUND_DOWN,
   ROUND_HALF_UP,
-  ROUND_UP
+  ROUND_UP,
 }
 
 export const getFactoryAddress = (chainId: number) => {
-  switch (chainId){
+  switch (chainId) {
     case ChainId.ETMPTest:
       return {
-        address: '0x4bFb5B69833b6FB801A13C510C7cfca50bd584e1',
-        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+        address: '0x0db25a12472B8826D3156A0E114020cA983ACD29',
+        initCodeHash: '0xae6f3d69b87c2322551f92efff26c134861286cde3ec4d9d0526ce73f7b71911',
       }
     case ChainId.ETMP:
       return {
         address: '0x890883022737CF17636fbE2f6B093Fff6c82135f',
-        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153',
       }
     default:
       return {
         address: '0x890883022737CF17636fbE2f6B093Fff6c82135f',
-        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153',
       }
   }
 }
@@ -64,10 +64,10 @@ export const _1000 = JSBI.BigInt(1000)
 
 export enum SolidityType {
   uint8 = 'uint8',
-  uint256 = 'uint256'
+  uint256 = 'uint256',
 }
 
 export const SOLIDITY_TYPE_MAXIMA = {
   [SolidityType.uint8]: JSBI.BigInt('0xff'),
-  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
+  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'),
 }
