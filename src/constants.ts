@@ -10,8 +10,8 @@ export enum ChainId {
   GÖRLI = 5,
   KOVAN = 42,
   BSC = 56,
-  ETMP = 36,
-  ETMPTest = 37,
+  ETMP = 48,
+  ETMPTest = 49,
 }
 
 export enum TradeType {
@@ -45,9 +45,9 @@ export const getFactoryAddress = (chainId: number) => {
   }
 }
 
-export const FACTORY_ADDRESS = '0x890883022737CF17636fbE2f6B093Fff6c82135f'
+export const FACTORY_ADDRESS = '0x0db25a12472B8826D3156A0E114020cA983ACD29'
 
-export const INIT_CODE_HASH = '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153'
+export const INIT_CODE_HASH = '0xae6f3d69b87c2322551f92efff26c134861286cde3ec4d9d0526ce73f7b71911'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
