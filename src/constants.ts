@@ -29,13 +29,13 @@ export const getFactoryAddress = (chainId: number) => {
   switch (chainId) {
     case ChainId.ETMPTest:
       return {
-        address: '0x0db25a12472B8826D3156A0E114020cA983ACD29',
+        address: '0xea5e29874040e671931E062a7b8b1244688f1781',
         initCodeHash: '0xae6f3d69b87c2322551f92efff26c134861286cde3ec4d9d0526ce73f7b71911',
       }
     case ChainId.ETMP:
       return {
-        address: '0x890883022737CF17636fbE2f6B093Fff6c82135f',
-        initCodeHash: '0x0c8000da87ec1e34d37962e9e58b649069b3b0548b00836ec9a8147d22dde153',
+        address: '0x1284a1702CFfBEe74e7b012b8063862Ba1BffEf2',
+        initCodeHash: '0xae6f3d69b87c2322551f92efff26c134861286cde3ec4d9d0526ce73f7b71911',
       }
     default:
       return {
@@ -45,7 +45,7 @@ export const getFactoryAddress = (chainId: number) => {
   }
 }
 
-export const FACTORY_ADDRESS = '0x0db25a12472B8826D3156A0E114020cA983ACD29'
+export const FACTORY_ADDRESS = '0xea5e29874040e671931E062a7b8b1244688f1781'
 
 export const INIT_CODE_HASH = '0xae6f3d69b87c2322551f92efff26c134861286cde3ec4d9d0526ce73f7b71911'
 
